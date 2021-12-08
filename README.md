@@ -9,7 +9,8 @@ GRAPHX is a programming language meant to build applications with graphical inte
 
 # GRAPHX Documentation
 
-> GRAPHX uses the file extension `.gfx`, using any other file extension will result in your code not being executed.\
+> GRAPHX uses the file extension `.gfx`, using any other file extension will result in your code not being executed.
+
 > GRAPHX puts built files in a relative directory named `build`, if this directory does not exist, it will be created. This is configurable.
 
 ## Error Codes
