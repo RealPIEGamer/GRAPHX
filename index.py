@@ -1,7 +1,7 @@
 # Imports lexer and lex for lexing, not to be confused with flexing
 import lexer
-from lexer import lex
+from lexer import Lexer
 
-# Begin lexing file, store to variable tokenized_source
-tokenized_source = lex('./examples/draw_window.gfx')
-
+# Tokenize file lol
+with open('./examples/draw_window.gfx', 'r') as f:
+    tokenized_source = Lexer(f.read()).tokenize()
