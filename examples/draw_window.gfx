@@ -1,0 +1,30 @@
+# allow certain parts of gfx to be loaded, not loading unneeded stuff, lowering run times
+use Controller from GFX # allows for packages
+use Window from GFX
+use Text
+
+Screen = draw rect(screenWidth, screenHeight, '#00ff00') # Uses width, Height, and color using Hex.
+
+draw Screen
+
+inside Screen{ # allows for nesting objects inside each other
+
+    on load{ # When screen loads, what happens?
+
+        introWindow = create window(100, 100, '#ffffff') # windows should be 'created', it shows that its meant as a interactable object i guess you could say
+
+    }
+
+    draw introWindow
+
+    inside introWindow{
+
+        on load{null} # if you dont need to create more objects (not including text), or any controller code, just put null lol
+
+        text.Heading("Welcome to GRAPHX", '#000000') # text is easy as pie... haha pun
+
+        text.para("We hope you enjoy your stay", '#000000') # kinda like the <p> tag in html but better.
+
+    }
+
+}
